@@ -180,8 +180,8 @@ cache/
 # Scripts de déploiement avec données sensibles
 *-secrets.ps1
 *-production.ps1
-Deploy-ToIIS-Secured.ps1
-Test-AllEndpoints.ps1
+*-ToIIS-Secured.ps1
+*-AllEndpoints.ps1
 deploy-secrets.json
 
 # Clés et certificats

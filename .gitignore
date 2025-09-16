@@ -252,10 +252,6 @@ dev-settings.json
 ## Documentation finale
 !README.md
 
-## Scripts de déploiement sécurisés (sans secrets)
-!Deploy-ToIIS-Secured.ps1
-!Test-AllEndpoints.ps1
-
 ## Fichiers de projet essentiels
 !*.csproj
 !*.sln

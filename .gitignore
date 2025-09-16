@@ -1,0 +1,287 @@
+# ================================================================================
+# .gitignore pour WimGetInfoApi - ASP.NET Core 8
+# Build and publish folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# IIS publish profiles
+Properties/PublishProfiles/
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Package files
+Package/
+
+# Test output
+TestResults/
+
+# Others
+*.DS_Store
+*.swp
+*.bak
+*.tmp
+
+# WIM test files (optional, if you don't want to version them)
+*.wim
+# Date: 2025-09-10
+# ================================================================================
+
+## Visual Studio 2022/2019 Files
+.vs/
+.vscode/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+arm64/
+armhf/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+## .NET Core Build Artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+
+## Publish Profiles (Sensitive deployment data)
+PublishProfiles/
+*.pubxml
+*.pubxml.user
+
+## Microsoft Azure Web Apps
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!packages/build/
+!packages/repositories.config
+
+## Node.js (pour d'éventuels outils frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Logs
+*.log
+logs/
+Logs/
+
+## IIS Deployment Files
+web.config
+webpublish.targets
+
+## Database Files
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite3
+
+## Configuration Files with Sensitive Data
+appsettings.Production.json
+appsettings.Staging.json
+appsettings.Local.json
+connectionstrings.json
+secrets.json
+
+## Testing and Coverage
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+## JetBrains Rider
+.idea/
+*.sln.iml
+
+## Windows Image Files (for testing - very large files)
+*.wim
+*.esd
+*.swm
+test-files/
+TestFiles/
+*.iso
+
+## Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+## OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+## Application Specific
+# Fichiers de test WIM (trop volumineux pour Git)
+/TestWimFiles/
+/WimTestFiles/
+/test-images/
+
+# Logs spécifiques à l'application
+/AppLogs/
+/ApplicationLogs/
+
+# Fichiers de cache
+*.cache
+cache/
+
+# Fichiers de sauvegarde PowerShell
+*.ps1~
+*.bak
+
+## Security and Deployment
+# Scripts de déploiement avec données sensibles
+*-secrets.ps1
+*-production.ps1
+Deploy-ToIIS-Secured.ps1
+Test-AllEndpoints.ps1
+deploy-secrets.json
+
+# Clés et certificats
+*.pfx
+*.p12
+*.key
+*.pem
+*.crt
+*.cer
+
+## Documentation Temporaire
+# Garder uniquement la documentation finale
+API_Documentation_OLD.md
+UPDATED_TECHNICAL_DOCUMENTATION.md
+CLEANUP_SUMMARY.md
+README_OLD.md
+TEMP_*.md
+DRAFT_*.md
+
+## Build et Publish Temporaires
+publish/
+PublishOutput/
+*.zip
+*.7z
+
+## Monitoring et Profiling
+*.ncrunchsolution
+*.ncrunchproject
+*.dotCover
+*.vsp
+*.psess
+
+# ================================================================================
+# RÈGLES SPÉCIFIQUES AU PROJET WIM ANALYZER
+# ================================================================================
+
+## Fichiers WIM de test (très volumineux)
+*.wim
+*.esd
+*.swm
+install.wim
+boot.wim
+winre.wim
+
+## Répertoires de test avec images Windows
+TestImages/
+WimFiles/
+TestData/
+SampleWim/
+
+## Sorties d'analyse
+analysis-results/
+wim-analysis-*.json
+extraction-temp/
+
+## Fichiers de configuration locale
+local-config.json
+dev-settings.json
+
+# ================================================================================
+# EXCEPTIONS - Fichiers à CONSERVER dans Git
+# ================================================================================
+
+## Configuration de base (sans données sensibles)
+!appsettings.json
+!appsettings.Development.json
+
+## Documentation finale
+!README.md
+
+## Scripts de déploiement sécurisés (sans secrets)
+!Deploy-ToIIS-Secured.ps1
+!Test-AllEndpoints.ps1
+
+## Fichiers de projet essentiels
+!*.csproj
+!*.sln
+!Program.cs
+
+## Configuration IIS publique
+!web.config.template
+
+# ================================================================================
+# NOTES DE MAINTENANCE
+# ================================================================================
+# 
+# Ce .gitignore exclut :
+# ✅ Tous les artéfacts de build (bin/, obj/)
+# ✅ Fichiers de configuration sensibles 
+# ✅ Fichiers WIM volumineux (> 1GB)
+# ✅ Logs et fichiers temporaires
+# ✅ Données spécifiques aux environnements
+# ✅ Outils et caches des IDEs
+#
+# Il conserve :
+# ✅ Code source principal
+# ✅ Configuration de base (non sensible)  
+# ✅ Documentation finale
+# ✅ Scripts de déploiement sécurisés
+# ✅ Fichiers de projet (.csproj, .sln)
+#
+# Dernière mise à jour : 2025-09-10
+# ================================================================================
